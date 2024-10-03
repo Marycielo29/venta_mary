@@ -1,3 +1,5 @@
 <?php
-echo "hello wlos"
+require_once "./crontoller/vistas_control.php";
+$vista = new vistasControlador();
+$vista->obtenerPlantillaControlador();
 ?>
