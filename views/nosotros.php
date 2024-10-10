@@ -1,4 +1,4 @@
-<a href="categorias.html" class="btn btn-outline-info col-2 m-3">Volver al inicio</a>
+<a href="<?php echo BASE_URL ?>categoria" class="btn btn-outline-info col-2 m-3">Volver al inicio</a>
         <div class="container shadow mt-3 p-0">
             <header class="text-dark text-center d-flex align-items-center justify-content-center"
                 style="height: 200px; background-size: cover; background-position: center; background: #e3f2fd;">
@@ -17,7 +17,7 @@
                     <div class="col-md-12 text-center">
                         <p class="fs-5 " style="font-family: 'Times New Roman', Times, serif;">
                             ¡Disfruta de una experiencia inolvidable en nuestra tienda online! <br>
-                            <img src="../IMG/logo.png" alt="" width="100" height="100">
+                            <img src="IMG/logo.png" alt="" width="100" height="100">
                         </p>
                     </div>
                 </div>
@@ -56,7 +56,7 @@
 
 
         <div id="footer" class="col-12 mt-5" style="background: #e3f2fd; height: 100px;">
-            <h1 class="text-center p-4 m-0">Hecho con amor para todas ustedes <img src="../IMG/logo.png" alt=""
+            <h1 class="text-center p-4 m-0">Hecho con amor para todas ustedes <img src="IMG/logo.png" alt=""
                     height="50px"></h1>
         </div>
     </div>

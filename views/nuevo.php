@@ -14,7 +14,7 @@
                 <h2 class="card-title" style="color: blue; font-family: 'Times New Roman', Times, serif;">Producto nuevo
                 </h2>
                 <div class="text-center">
-                  <a href="producto.html" class=" btn btn-outline-info" ;">Ver Detalles</a>
+                  <a href="<?php echo BASE_URL ?>producto" class=" btn btn-outline-info" ;">Ver Detalles</a>
                 </div>
               </div>
             </div>
@@ -27,7 +27,7 @@
                 <h2 class="card-title" style="color: blue; font-family: 'Times New Roman', Times, serif;">Producto nuevo
                 </h2>
                 <div class="text-center">
-                  <a href="producto.html" class=" btn btn-outline-info" ;">Ver Detalles</a>
+                  <a href="<?php echo BASE_URL ?>producto" class=" btn btn-outline-info" ;">Ver Detalles</a>
                 </div>
               </div>
             </div>
@@ -40,7 +40,7 @@
                 <h2 class="card-title" style="color: blue; font-family: 'Times New Roman', Times, serif;">Producto nuevo
                 </h2>
                 <div class="text-center">
-                  <a href="producto.html" class=" btn btn-outline-info" ;">Ver Detalles</a>
+                  <a href="<?php echo BASE_URL ?>producto" class=" btn btn-outline-info" ;">Ver Detalles</a>
                 </div>
               </div>
             </div>
@@ -53,7 +53,7 @@
                 <h2 class="card-title" style="color: blue; font-family: 'Times New Roman', Times, serif;">Producto nuevo
                 </h2>
                 <div class="text-center">
-                  <a href="producto.html" class=" btn btn-outline-info" ;">Ver Detalles</a>
+                  <a href="<?php echo BASE_URL ?>producto" class=" btn btn-outline-info" ;">Ver Detalles</a>
                 </div>
               </div>
             </div>
@@ -66,7 +66,7 @@
                 <h2 class="card-title" style="color: blue; font-family: 'Times New Roman', Times, serif;">Producto nuevo
                 </h2>
                 <div class="text-center">
-                  <a href="producto.html" class=" btn btn-outline-info" ;">Ver Detalles</a>
+                  <a href="<?php echo BASE_URL ?>producto" class=" btn btn-outline-info" ;">Ver Detalles</a>
                 </div>
               </div>
             </div>
@@ -79,7 +79,7 @@
                 <h2 class="card-title" style="color: blue; font-family: 'Times New Roman', Times, serif;">Producto nuevo
                 </h2>
                 <div class="text-center">
-                  <a href="producto.html" class=" btn btn-outline-info" ;">Ver Detalles</a>
+                  <a href="<?php echo BASE_URL ?>producto" class=" btn btn-outline-info" ;">Ver Detalles</a>
                 </div>
               </div>
             </div>
@@ -92,7 +92,7 @@
                 <h2 class="card-title" style="color: blue; font-family: 'Times New Roman', Times, serif;">Producto nuevo
                 </h2>
                 <div class="text-center">
-                  <a href="producto.html" class=" btn btn-outline-info" ;">Ver Detalles</a>
+                  <a href="<?php echo BASE_URL ?>producto" class=" btn btn-outline-info" ;">Ver Detalles</a>
                 </div>
               </div>
             </div>
@@ -105,7 +105,7 @@
                 <h2 class="card-title" style="color: blue; font-family: 'Times New Roman', Times, serif;">Producto nuevo
                 </h2>
                 <div class="text-center">
-                  <a href="producto.html" class=" btn btn-outline-info" ;">Ver Detalles</a>
+                  <a href="<?php echo BASE_URL ?>producto" class=" btn btn-outline-info" ;">Ver Detalles</a>
                 </div>
               </div>
             </div>
@@ -118,7 +118,7 @@
                 <h2 class="card-title" style="color: blue; font-family: 'Times New Roman', Times, serif;">Producto nuevo
                 </h2>
                 <div class="text-center">
-                  <a href="producto.html" class=" btn btn-outline-info" ;">Ver Detalles</a>
+                  <a href="<?php echo BASE_URL ?>producto" class=" btn btn-outline-info" ;">Ver Detalles</a>
                 </div>
               </div>
             </div>
@@ -131,7 +131,7 @@
                 <h2 class="card-title" style="color: blue; font-family: 'Times New Roman', Times, serif;">Producto nuevo
                 </h2>
                 <div class="text-center">
-                  <a href="producto.html" class=" btn btn-outline-info" ;">Ver Detalles</a>
+                  <a href="<?php echo BASE_URL ?>producto" class=" btn btn-outline-info" ;">Ver Detalles</a>
                 </div>
               </div>
             </div>
@@ -144,7 +144,7 @@
                 <h2 class="card-title" style="color: blue; font-family: 'Times New Roman', Times, serif;">Producto nuevo
                 </h2>
                 <div class="text-center">
-                  <a href="producto.html" class=" btn btn-outline-info" ;">Ver Detalles</a>
+                  <a href="<?php echo BASE_URL ?>producto" class=" btn btn-outline-info" ;">Ver Detalles</a>
                 </div>
               </div>
             </div>
@@ -157,7 +157,7 @@
                 <h2 class="card-title" style="color: blue; font-family: 'Times New Roman', Times, serif;">Producto nuevo
                 </h2>
                 <div class="text-center">
-                  <a href="producto.html" class=" btn btn-outline-info" ;">Ver Detalles</a>
+                  <a href="<?php echo BASE_URL ?>producto" class=" btn btn-outline-info" ;">Ver Detalles</a>
                 </div>
               </div>
             </div>

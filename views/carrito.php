@@ -1,17 +1,17 @@
 <div class="p-4">
       <ul class="nav nav-underline">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#"><img src="../IMG/carrito.png" alt="" width="20px"></a>
+          <a class="nav-link active" aria-current="page" href="#"><img src="IMG/carrito.png" alt="" width="20px"></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link " href="categorias.html">Más productos</a>
+          <a class="nav-link " href="<?php echo BASE_URL ?>categoria">Más productos</a>
         </li>
       </ul>
     </div>
     <div class="w-100 row m-0">
       <div id="productos" class="w-75" style="min-height: 500px;">
         <div class="card w-100 row m-0 mb-1" style="height: 120px; background: #e3f2fd; border: none;">
-          <img src="../IMG/blanco.png" alt="" class="h-100 p-0 col-2" style="border: solid;">
+          <img src="IMG/blanco.png" alt="" class="h-100 p-0 col-2" style="border: solid;">
           <div id="producto" class="p-0 col-4 h-100 m-4 text-center">
             <p style="font-size: larger;">Sandalia de tacón de aguja con tiras para mujer. </p>
           </div>
@@ -25,7 +25,7 @@
           <div id="subtotal" class="col-2 p-0 h-100 mt-5">S/.90.00</div>
         </div>
         <div class="card w-100 row m-0 mb-1" style="height: 120px; background: #e3f2fd; border: none;">
-          <img src="../IMG/verde.png" alt="" class="h-100 p-0 col-2" style="border: solid;">
+          <img src="IMG/verde.png" alt="" class="h-100 p-0 col-2" style="border: solid;">
           <div id="producto" class="p-0 col-4 h-100 m-4 text-center">
             <p style="font-size: larger;">Sandalia de tacón de aguja con tiras para mujer. </p>
           </div>
@@ -39,7 +39,7 @@
           <div id="subtotal" class="col-2 p-0 h-100 mt-5">S/.30.00</div>
         </div>
         <div class="card w-100 row m-0 mb-1" style="height: 120px; background: #e3f2fd; border: none;">
-          <img src="../IMG/3.png" alt="" class="h-100 p-0 col-2" style="border: solid;">
+          <img src="IMG/3.png" alt="" class="h-100 p-0 col-2" style="border: solid;">
           <div id="producto" class="p-0 col-4 h-100 m-4 text-center">
             <p style="font-size: larger;">Sandalia de tacón de aguja con tiras para mujer. </p>
           </div>
@@ -53,7 +53,7 @@
           <div id="subtotal" class="col-2 p-0 h-100 mt-5">S/.30.00</div>
         </div>
         <div class="card w-100 row m-0 mb-1" style="height: 120px; background: #e3f2fd; border: none;">
-          <img src="../IMG/negro.png" alt="" class="h-100 p-0 col-2" style="border: solid;">
+          <img src="IMG/negro.png" alt="" class="h-100 p-0 col-2" style="border: solid;">
           <div id="producto" class="p-0 col-4 h-100 m-4 text-center">
             <p style="font-size: larger;">Sandalia de tacón de aguja con tiras para mujer. </p>
           </div>
@@ -86,8 +86,8 @@
         <hr>
         <hr>
         <div class="text-center d-grid gap-2 col-12 mx-auto">
-          <a href="pago.html" class="btn btn-success">Pagar</a>
-          <a href="categorias.html" class="btn btn-primary">Seguir Comprando</a>
+          <a href="<?php echo BASE_URL ?>pago" class="btn btn-success">Pagar</a>
+          <a href="<?php echo BASE_URL ?>categoria" class="btn btn-primary">Seguir Comprando</a>
         </div>
       </div>
     </div>
@@ -103,7 +103,7 @@
             <div class="card-body">
               <div class="text-center">
                 <button type="button" class="btn btn-danger">En STOCK</button>
-                <a href="stock.html" class="btn btn-outline-info">Ver màs</a>
+                <a href="<?php echo BASE_URL ?>stock" class="btn btn-outline-info">Ver màs</a>
               </div>
             </div>
           </div>
@@ -115,7 +115,7 @@
             <div class="card-body">
               <div class="text-center">
                 <button type="button" class="btn btn-danger">En STOCK</button>
-                <a href="stock.html" class="btn btn-outline-info">Ver màs</a>
+                <a href="<?php echo BASE_URL ?>stock" class="btn btn-outline-info">Ver màs</a>
               </div>
             </div>
           </div>
@@ -127,7 +127,7 @@
             <div class="card-body">
               <div class="text-center">
                 <button type="button" class="btn btn-danger">En STOCK</button>
-                <a href="stock.html" class="btn btn-outline-info">Ver màs</a>
+                <a href="<?php echo BASE_URL ?>stock" class="btn btn-outline-info">Ver màs</a>
               </div>
             </div>
           </div>
@@ -139,7 +139,7 @@
             <div class="card-body">
               <div class="text-center">
                 <button type="button" class="btn btn-danger">En STOCK</button>
-                <a href="stock.html" class="btn btn-outline-info">Ver màs</a>
+                <a href="<?php echo BASE_URL ?>stock" class="btn btn-outline-info">Ver màs</a>
               </div>
             </div>
           </div>

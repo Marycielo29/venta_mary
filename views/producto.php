@@ -1,15 +1,15 @@
 <div id="detalle_producto" class="col-12 row m-0 container-fluid p-0">
-      <a href="categorias.html" class="btn btn-outline-info col-2 m-3">Volver al inicio</a>
+      <a href="<?php echo BASE_URL ?>categoria" class="btn btn-outline-info col-2 m-3">Volver al inicio</a>
       <h2 class="text-center p-3" style="font-family: 'Times New Roman', Times, serif;">DETALLES DEL PRODUCTO</h2>
       <div id="imagenes_productos" class="col-6 row m-0">
         <div id="imagen_principal" class="col-12 p-5" style="background:#e3f2fd; height: 800px;">
-          <img src="../IMG/producto.png" alt="" class="w-100 h-100">
+          <img src="IMG/producto.png" alt="" class="w-100 h-100">
         </div>
         <div class="container-fluid-md row" style="justify-content: center;">
-          <div class="col-2 btn "><img src="../IMG/1.png" alt="" class="w-100 h-100"></div>
-          <div class="col-2 btn"><img src="../IMG/2.png" alt="" class="w-100 h-100"></div>
-          <div class="col-2 btn"><img src="../IMG/3.png" alt="" class="w-100 h-100"></div>
-          <div class="col-2 btn"><img src="../IMG/4.png" alt="" class="w-100 h-100"></div>
+          <div class="col-2 btn "><img src="IMG/1.png" alt="" class="w-100 h-100"></div>
+          <div class="col-2 btn"><img src="IMG/2.png" alt="" class="w-100 h-100"></div>
+          <div class="col-2 btn"><img src="IMG/3.png" alt="" class="w-100 h-100"></div>
+          <div class="col-2 btn"><img src="IMG/4.png" alt="" class="w-100 h-100"></div>
         </div>
       </div>
       <div id="detalles" class="col-6 p-5" style="height: 800px; background:#e3f2fd ;">
@@ -19,10 +19,10 @@
         <h2 style="color: red; text-align: center;">S/130.00</h2>
         <h3 style="font-family: 'Times New Roman', Times, serif;">Colores disponibles</h3>
         <div class="container-fluid-md row height:10; p-2 ">
-          <div class="col-2 m-2 btn btn-outline-info"><img src="../IMG/rojo.png" alt="" class="w-100 h-100"></div>
-          <div class="col-2 m-2 btn btn-outline-info"><img src="../IMG/blanco.png" alt="" class="w-100 h-100"></div>
-          <div class="col-2 m-2 btn btn-outline-info"><img src="../IMG/verde.png" alt="" class="w-100 h-100"></div>
-          <div class="col-2 m-2 btn btn-outline-info"><img src="../IMG/negro.png" alt="" class="w-100 h-100"></div>
+          <div class="col-2 m-2 btn btn-outline-info"><img src="IMG/rojo.png" alt="" class="w-100 h-100"></div>
+          <div class="col-2 m-2 btn btn-outline-info"><img src="IMG/blanco.png" alt="" class="w-100 h-100"></div>
+          <div class="col-2 m-2 btn btn-outline-info"><img src="IMG/verde.png" alt="" class="w-100 h-100"></div>
+          <div class="col-2 m-2 btn btn-outline-info"><img src="IMG/negro.png" alt="" class="w-100 h-100"></div>
         </div>
         <h4 class="mt-5" style="font-family: 'Times New Roman', Times, serif; padding:10px; margin: 0px;">Talla
           disponibles</h4>
@@ -113,8 +113,8 @@
           <div class="card-body">
             <h5 class="card-title" style="color: red;">S/150.00</h5>
             <div class="text-center">
-              <a href="producto.html" class="btn" style="background: #e3f2fd;">Ver Detalles</a>
-              <a href="categorias.html" class="btn" style="background: #15EEF5;">Ver màs</a>
+              <a href="<?php echo BASE_URL ?>producto" class="btn" style="background: #e3f2fd;">Ver Detalles</a>
+              <a href="<?php echo BASE_URL ?>categoria" class="btn" style="background: #15EEF5;">Ver màs</a>
             </div>
           </div>
         </div>
@@ -126,8 +126,8 @@
           <div class="card-body">
             <h5 class="card-title" style="color: red;">S/90.00</h5>
             <div class="text-center">
-              <a href="producto.html" class="btn" style="background: #e3f2fd;">Ver Detalles</a>
-              <a href="categorias.html" class="btn" style="background: #15EEF5;">Ver màs</a>
+              <a href="<?php echo BASE_URL ?>producto" class="btn" style="background: #e3f2fd;">Ver Detalles</a>
+              <a href="<?php echo BASE_URL ?>categoria" class="btn" style="background: #15EEF5;">Ver màs</a>
             </div>
           </div>
         </div>
@@ -139,8 +139,8 @@
           <div class="card-body">
             <h5 class="card-title" style="color: red;">S/150.00</h5>
             <div class="text-center">
-              <a href="producto.html" class="btn" style="background: #e3f2fd;">Ver Detalles</a>
-              <a href="categorias.html" class="btn" style="background: #15EEF5;">Ver màs</a>
+              <a href="<?php echo BASE_URL ?>producto" class="btn" style="background: #e3f2fd;">Ver Detalles</a>
+              <a href="<?php echo BASE_URL ?>categoria" class="btn" style="background: #15EEF5;">Ver màs</a>
             </div>
           </div>
         </div>
@@ -152,8 +152,8 @@
           <div class="card-body">
             <h5 class="card-title" style="color: red;">S/110.00</h5>
             <div class="text-center">
-              <a href="producto.html" class="btn" style="background: #e3f2fd;">Ver Detalles</a>
-              <a href="categorias.html" class="btn" style="background: #15EEF5;">Ver màs</a>
+              <a href="<?php echo BASE_URL ?>producto" class="btn" style="background: #e3f2fd;">Ver Detalles</a>
+              <a href="<?php echo BASE_URL ?>categoria" class="btn" style="background: #15EEF5;">Ver màs</a>
             </div>
           </div>
         </div>

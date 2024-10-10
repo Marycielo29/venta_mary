@@ -1,8 +1,8 @@
-<a href="categorias.html" class="btn btn-outline-info col-2 m-3">Volver al inicio</a>
+<a href="<?php echo BASE_URL ?>categoria" class="btn btn-outline-info col-2 m-3">Volver al inicio</a>
 <div class="container shadow mt-3">
     <div class="row">
         <div class="col-md-6">
-            <img src="../IMG/logo.png" alt="Bible Image" class="img-fluid">
+            <img src="IMG/logo.png" alt="Bible Image" class="img-fluid">
         </div>
 
         <div class="col-md-6 p-5" style="font-family: 'Times New Roman', Times, serif;">

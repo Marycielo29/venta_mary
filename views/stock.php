@@ -13,7 +13,7 @@
                 <p class="text-center" style="font-family: 'Times New Roman', Times, serif;">Aprovecha los ultimos
                   calzados disponibles</p>
                 <div class="text-center">
-                  <a href="producto.html" class=" btn btn-outline-info" ;">Ver Detalles</a>
+                  <a href="<?php echo BASE_URL ?>producto" class=" btn btn-outline-info" ;">Ver Detalles</a>
                 </div>
               </div>
             </div>
@@ -27,7 +27,7 @@
                 <p class="text-center" style="font-family: 'Times New Roman', Times, serif;">Aprovecha los ultimos
                   calzados disponibles</p>
                 <div class="text-center">
-                  <a href="producto.html" class=" btn btn-outline-info" ;">Ver Detalles</a>
+                  <a href="<?php echo BASE_URL ?>producto" class=" btn btn-outline-info" ;">Ver Detalles</a>
                 </div>
               </div>
             </div>
@@ -41,7 +41,7 @@
                 <p class="text-center" style="font-family: 'Times New Roman', Times, serif;">Aprovecha los ultimos
                   calzados disponibles</p>
                 <div class="text-center">
-                  <a href="producto.html" class=" btn btn-outline-info" ;">Ver Detalles</a>
+                  <a href="<?php echo BASE_URL ?>producto" class=" btn btn-outline-info" ;">Ver Detalles</a>
                 </div>
               </div>
             </div>
@@ -55,7 +55,7 @@
                 <p class="text-center" style="font-family: 'Times New Roman', Times, serif;">Aprovecha los ultimos
                   calzados disponibles</p>
                 <div class="text-center">
-                  <a href="producto.html" class=" btn btn-outline-info" ;">Ver Detalles</a>
+                  <a href="<?php echo BASE_URL ?>producto" class=" btn btn-outline-info" ;">Ver Detalles</a>
                 </div>
               </div>
             </div>
@@ -69,7 +69,7 @@
                 <p class="text-center" style="font-family: 'Times New Roman', Times, serif;">Aprovecha los ultimos
                   calzados disponibles</p>
                 <div class="text-center">
-                  <a href="producto.html" class=" btn btn-outline-info" ;">Ver Detalles</a>
+                  <a href="<?php echo BASE_URL ?>producto" class=" btn btn-outline-info" ;">Ver Detalles</a>
                 </div>
               </div>
             </div>
@@ -83,7 +83,7 @@
                 <p class="text-center" style="font-family: 'Times New Roman', Times, serif;">Aprovecha los ultimos
                   calzados disponibles</p>
                 <div class="text-center">
-                  <a href="producto.html" class=" btn btn-outline-info" ;">Ver Detalles</a>
+                  <a href="<?php echo BASE_URL ?>producto" class=" btn btn-outline-info" ;">Ver Detalles</a>
                 </div>
               </div>
             </div>
@@ -97,7 +97,7 @@
                 <p class="text-center" style="font-family: 'Times New Roman', Times, serif;">Aprovecha los ultimos
                   calzados disponibles</p>
                 <div class="text-center">
-                  <a href="producto.html" class=" btn btn-outline-info" ;">Ver Detalles</a>
+                  <a href="<?php echo BASE_URL ?>producto" class=" btn btn-outline-info" ;">Ver Detalles</a>
                 </div>
               </div>
             </div>
@@ -111,7 +111,7 @@
                 <p class="text-center" style="font-family: 'Times New Roman', Times, serif;">Aprovecha los ultimos
                   calzados disponibles</p>
                 <div class="text-center">
-                  <a href="producto.html" class=" btn btn-outline-info" ;">Ver Detalles</a>
+                  <a href="<?php echo BASE_URL ?>producto" class=" btn btn-outline-info" ;">Ver Detalles</a>
                 </div>
               </div>
             </div>
@@ -125,7 +125,7 @@
                 <p class="text-center" style="font-family: 'Times New Roman', Times, serif;">Aprovecha los ultimos
                   calzados disponibles</p>
                 <div class="text-center">
-                  <a href="producto.html" class=" btn btn-outline-info" ;">Ver Detalles</a>
+                  <a href="<?php echo BASE_URL ?>producto" class=" btn btn-outline-info" ;">Ver Detalles</a>
                 </div>
               </div>
             </div>

@@ -1,11 +1,11 @@
 <div>
       <ul class="nav justify-content-center">
         <li class="nav-item mt-3 p-3">
-          <a class="btn btn-outline-info aria-current=" href="PAG/categorias.html">TACONES PARA DAMAS</a>
+          <a class="btn btn-outline-info aria-current=" href="<?php echo BASE_URL ?>categoria">TACONES PARA DAMAS</a>
         </li>
         <h1>NUEVOS PRODUCTOS PARA IMPONER MODA</h1>
         <li class="nav-item mt-3 p-3">
-          <a class="btn btn-outline-info" href="PAG/login.html">REGISTRARSE</a>
+          <a class="btn btn-outline-info" href="<?php echo BASE_URL ?>login">REGISTRARSE</a>
         </li>
       </ul>
     </div>
@@ -102,7 +102,7 @@
     </div>
 
     <div class="list-group col-2 m-3">
-      <a href="PAG/categorias.html"
+      <a href="<?php echo BASE_URL ?>categoria"
         class="list-group-item list-group-item-action list-group-item-primary text-center">Ver mucho más</a>
     </div>
     <hr>

@@ -50,7 +50,7 @@
             </div>
           </div>
           <div class="d-grid gap-2 mt-3 p-0">
-            <a href="<?php echo BASE_URL ?>index" class="btn btn-outline-info"
+            <a href="<?php echo BASE_URL ?>principal" class="btn btn-outline-info"
               style="font-family: 'Times New Roman', Times, serif; font-size: 20px;">Iniciar sesion</a>
           </div>
         </form>

@@ -12,7 +12,7 @@
   <div class="container-fluid p-0">
     <nav class="navbar navbar-expand-lg" style="background-color: #e3f2fd;">
       <div class="container-fluid">
-        <a class="navbar-brand" href="<?php echo BASE_URL ?>index"> <img src="IMG/logo.png" alt="Logo" width="40" height="40"
+        <a class="navbar-brand" href="<?php echo BASE_URL ?>principal"> <img src="IMG/logo.png" alt="Logo" width="40" height="40"
             class="d-inline-block align-text-top">PAGINA PRINCIPAL</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
