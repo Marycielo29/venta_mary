@@ -17,6 +17,12 @@ class vistaModelo{
             $contenido = "login";
         }elseif($vista=="perfil" ){
             $contenido = "perfil";
+        }elseif($vista=="pago" ){
+            $contenido = "pago";
+        }elseif($vista=="contactanos" ){
+            $contenido = "contactanos";
+        }elseif($vista=="nosotros" ){
+            $contenido = "nosotros";
 
         }else{
             $contenido = "404"; // no esta permitido
