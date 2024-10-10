@@ -1,3 +1,22 @@
+<ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="<?php echo BASE_URL ?>categoria">TACONES PARA MUJERES</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+          aria-expanded="false">Variedades</a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="<?php echo BASE_URL ?>botines">Botines</a></li>
+          <li><a class="dropdown-item" href="<?php echo BASE_URL ?>sandalias">Sandalias</a></li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="<?php echo BASE_URL ?>nuevo">Lo màs nuevo</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="<?php echo BASE_URL ?>stock">Stock</a>
+      </li>
+    </ul>
 <div class="container-fluid  m-0 p-3 mt-1 row ">
       <div class="col-lg-2 col-md-4 col-sm-6 p-2">
         <div class="card" style="min-height: 350px;">

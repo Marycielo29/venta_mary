@@ -1,7 +1,23 @@
+<ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="<?php echo BASE_URL ?>categoria">TACONES PARA MUJERES</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+          aria-expanded="false">Variedades</a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="<?php echo BASE_URL ?>botines">Botines</a></li>
+          <li><a class="dropdown-item" href="<?php echo BASE_URL ?>sandalias">Sandalias</a></li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="<?php echo BASE_URL ?>nuevo">Lo màs nuevo</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="<?php echo BASE_URL ?>stock">Stock</a>
+      </li>
+    </ul>
 <h1 class="text-center " style="font-family: 'Times New Roman', Times, serif;">NUEVOS CALZADOS DISPONIBLES</h1>
-
-
-
     <div class="row p-3 m-0">
       <div class="col-2"><img src="" alt=""></div>
       <div id="detalles" class="col-8 p-2" style="background: #e3f2fd; height: 1000px; margin: 10px; overflow: scroll;">

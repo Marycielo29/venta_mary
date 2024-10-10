@@ -41,7 +41,7 @@
           <button class="btn btn-info col-2 h-50 m-1 p-0" onclick="sumarcantidad()">+</button>
         </div>
         <div class="text-center p-10 mt-5">
-          <a href="carrito.html" class="btn btn-outline-success mt-3" style="font-family: 'Times New Roman';">AÑADIR AL
+          <a href="<?php echo BASE_URL ?>carrito" class="btn btn-outline-success mt-3" style="font-family: 'Times New Roman';">AÑADIR AL
             CARRITO</a>
         </div>
       </div>
