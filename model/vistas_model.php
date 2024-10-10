@@ -3,7 +3,7 @@
 class vistaModelo{
 
     protected static function obtener_vista($vista){
-        $palabras_permitidas =['usuario', 'nuevo-usuario', 'modificar-usuario', 'producto', 'index', 'carrito', 'botines', 'sandalias', 'nuevo', 'stock', 'contactanos', 'nosotros', 'categoria', 'nuevo',
+        $palabras_permitidas =['usuario', 'nuevo-usuario', 'modificar-usuario', 'producto', 'inicio', 'carrito', 'botines', 'sandalias', 'nuevo', 'stock', 'contactanos', 'nosotros', 'categoria', 'nuevo',
     'pago', 'sandalias', 'stock']; //carpetas de html
         if(in_array($vista, $palabras_permitidas)){
             if (is_file("./views/".$vista.".php")) {
