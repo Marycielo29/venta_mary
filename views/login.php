@@ -26,6 +26,7 @@
           </div>
           <div class="mb-3">
             <label for="password" class="form-label"
+            
               style="font-family: 'Times New Roman', Times, serif;">CONTRASEÑA:</label>
             <input type="password" name="password" class="form-control" id="password" placeholder="contraseña" required>
           </div>
