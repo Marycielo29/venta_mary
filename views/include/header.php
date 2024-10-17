@@ -7,7 +7,9 @@
   <title>Document</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
 </head>
-
+<script>
+  const base_url = '<?php echo BASE_URL; ?>';
+</script>
 <body>
   <div class="container-fluid p-0">
     <nav class="navbar navbar-expand-lg" style="background-color: #e3f2fd;">
