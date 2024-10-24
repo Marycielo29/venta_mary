@@ -21,6 +21,12 @@ if ($tipo=="registrar"){
 
         }else {
             $arrProducto = $objProducto->registrarProducto($codigo, $nombre, $detalle, $precio, $stock, $categoria, $imagen, $proveedor);
+
+            if ($arrProducto->id>0) {
+                $arr_Respuesta = array('status'=>true, 'mensaje'=>'Registro exitoso');
+            }else{
+                $arr_Respuesta = array('status'=>false, 'mensaje'=>'Error al registrar producto');
+            }
         }
     }
 }
