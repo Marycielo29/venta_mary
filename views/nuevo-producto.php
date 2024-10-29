@@ -22,7 +22,9 @@
     </div>
     <div>
         <label for="">Categoria</label>
-        <input type="number" id="categoria" name="idcategoria" class="form-control" required>
+        <select name="idcategoria" id="categoria" class="form-control" required>
+        <option>Seleccione</option>
+        </select>
     </div>
     <div>
         <label for="">Imagen: </label>
@@ -36,4 +38,5 @@
 </form>
 
 <script src="<?php echo BASE_URL ?>views/js/functions_producto.js"></script>
+
 <script>listar_categorias();</script>
