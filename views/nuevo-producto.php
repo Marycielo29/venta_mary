@@ -17,26 +17,29 @@
         <input type="number" id="precio" name="precio" class="form-control" required>
     </div>
     <div>
-        <label for="">Stock: </label>
+        <label for="stock">Stock: </label>
         <input type="number" id="stock" name="stock" class="form-control" required>
     </div>
     <div>
-        <label for="">Categoria</label>
-        <select name="idcategoria" id="categoria" class="form-control" required>
+        <label for="categoria">Categoria</label>
+        <select name="categoria" id="categoria" class="form-control" required>
         <option>Seleccione</option>
         </select>
     </div>
     <div>
         <label for="">Imagen: </label>
-        <input type="text" id="imagen" name="imagen" class="form-control" required>
+        <input type="file" id="imagen" name="imagen" class="form-control" required>
     </div>
     <div>
         <label for="">Proveedor: </label>
-        <input type="number" id="proveedor" name="idproveedor" class="form-control" required>
+        <select id="proveedor" name="proveedor" class="form-control" required>
+        <option>Seleccione</option>
+        </select>
     </div>
     <button type="button" class="btn btn-success" onclick="registrar_producto();">Registrar</button>
-</form>
+</form>---
 
 <script src="<?php echo BASE_URL ?>views/js/functions_producto.js"></script>
 
 <script>listar_categorias();</script>
+<script>listar_proveedor();</script>

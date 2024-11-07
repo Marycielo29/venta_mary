@@ -21,3 +21,4 @@ class categoriaModel
         return $arrRespuesta;
     }
 }
+
