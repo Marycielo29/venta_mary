@@ -40,7 +40,7 @@ async function registrar_producto(){
                 json = await respuesta.json();
                 if (json.status) {
                     let datos = json.contenido;
-                    let contenido_select = '<option values="">Seleccione</option>';
+                    let contenido_select = '<option value="">Seleccione</option>';
                     datos.forEach(element => {
                         contenido_select += '<option value="' + element.id + '">' + element.nombre + '</option>';
                        /* $('#categoria').append($('<option />',{
@@ -76,6 +76,6 @@ async function registrar_producto(){
             }
             console.log(respuesta);
         } catch (e) {
-            console.log("Error  al cargar categorias " + e);
+            console.log("Error  al cargar proveedor " + e);
         }
     }
