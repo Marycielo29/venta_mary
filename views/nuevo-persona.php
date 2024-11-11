@@ -1,23 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body>
 <div class="container mt-5"> 
 <h1 class="text-center mb-4">Registrar Usuario</h1>
-<form action="" class="from-control" id="frmRegistrar"></form>
-
+<form action="" class="from-control" id="frmRegistrar">
 <div class="mb-3">
         <label for="">Numero de Identidad: </label>
-        <input type="text" id="nroIdentidad" name="nroIdentidad" class="form-control" required>
+        <input type="text" id="nro_identidad" name="nroIdentidad" class="form-control" required>
     </div>
     <div class="mb-3">
         <label for="">Razon social: </label>
-        <input type="text" id="razonSocial" name="razonSocial" class="form-control" required>
+        <input type="text" id="razon_social" name="razonSocial" class="form-control" required>
     </div>
     <div class="mb-3">
         <label for="">Telefono: </label>
@@ -41,7 +31,7 @@
     </div>
     <div class="mb-3">
         <label for="">Codigo postal: </label>
-        <input type="number" id="codigoPostal" name="codigoPostal" class="form-control" required>
+        <input type="number" id="cod_postal" name="cod_postal" class="form-control" required>
     </div>
     <div class="mb-3">
         <label for="">Direccion: </label>
@@ -53,7 +43,7 @@
     </div>
     <div class="mb-3">
         <label for="">Password: </label>
-        <input type="text" id="password" name="password" class="form-control" required>
+        <input type="password" id="password" name="password" class="form-control" required>
     </div>
     <div class="mb-3">
         <label for="">Estado: </label>
@@ -61,9 +51,9 @@
     </div>
     <div class="mb-3">
         <label for="">Fecha de Registro: </label>
-        <input type="date" id="fechaRegistro" name="fechaRegistro" class="form-control" required>
+        <input type="date" id="fecha_reg" name="fecha_reg" class="form-control" required>
     </div>
-    <button type="button" class="mb-3 btn btn-outline-info" onclick="registrarPersona();">Registrar</button>
+    <button type="button" class="mb-3 btn btn-outline-info" onclick="registrarPersona();"><i class="bi bi-check-circle"></i>Registrar</button>
 </form>
 </div>
 

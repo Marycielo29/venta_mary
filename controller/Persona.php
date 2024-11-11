@@ -8,23 +8,23 @@ $objPersona = new PersonaModel();
 if ($tipo=="registrar"){
 //print_r($_POST);
 if ($_POST) {
-    $nroIdentidad = $_POST['nroIdentidad'];
-    $razonSocial = $_POST['razonSocial'];
+    $nro_identidad = $_POST['nroIdentidad'];
+    $razon_social = $_POST['razonSocial'];
     $telefono = $_POST['telefono'];
     $correo = $_POST['correo'];
     $departamento = $_POST['departamento'];
     $provincia = $_POST['provincia'];
     $distrito = $_POST['distrito'];
-    $codigoPostal = $_POST['codigoPostal'];
+    $cod_postal = $_POST['cod_postal'];
     $direccion = $_POST['direccion'];
     $rol = $_POST['rol'];
     $password = $_POST['password'];
     $estado = $_POST['estado'];
-    $fechaRegistro = $_POST['fechaRegistro'];
-    if($nroIdentidad=="" || $razonSocial=="" || $telefono=="" || $correo=="" || $departamento=="" || $provincia=="" ||  $distrito=="" || $codigoPostal=="" || $direccion=="" || $rol=="" || $password=="" || $estado=="" || $fechaRegistro==""){
+    $fecha_reg = $_POST['fecha_reg'];
+    if($nro_identidad=="" || $razon_social=="" || $telefono=="" || $correo=="" || $departamento=="" || $provincia=="" ||  $distrito=="" || $cod_postal=="" || $direccion=="" || $rol=="" || $password=="" || $estado=="" || $fecha_reg==""){
         $arr_Respuesta = array('status'=>false,'mensaje'=>'Error, campos vacios'); //respuesta
     }else {
-        $arrPersona = $objPersona->registrarPersona($nroIdentidad, $razonSocial, $telefono, $correo, $departamento, $provincia, $distrito, $codigoPostal, $direccion, $rol, $password, $estado, $fechaRegistro);
+        $arrPersona = $objPersona->registrarPersona($nro_identidad, $razon_social, $telefono, $correo, $departamento, $provincia, $distrito, $cod_postal, $direccion, $rol, $password, $estado, $fecha_reg);
     
         if ($arrPersona->id>0) {
             $arr_Respuesta = array('status'=>true, 'mensaje'=>'Registro exitoso');
@@ -32,9 +32,10 @@ if ($_POST) {
         }else{
             $arr_Respuesta = array('status'=>false, 'mensaje'=>'Error al registrar persona');
         }
+    }
             echo json_encode($arr_Respuesta);
 
 }
 }
-}
+
 ?>
