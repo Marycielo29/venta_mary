@@ -29,8 +29,6 @@ async function registrar_compra() {
         console.log("Oops, ocurrio un error"+e);
        }
     }
-
-
 async function listar_productos() {
     try {
         // envia datos hacia el controlador
@@ -50,7 +48,6 @@ async function listar_productos() {
         console.e("Error al cargar producto" + e);
     }
 }
-
 // Listar proveedores
 async function listar_trabajadores() {
     try {
