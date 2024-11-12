@@ -1,6 +1,6 @@
 
 <div class="container mt-5">
-<h1 class="text-center mb-4 text-primary">Registrar categorias</h1>
+<h1 class="text-center mb-4 ">Registrar categorias</h1>
 
 <form action="" class="from-control" id="frmRegistrar">
 <div class="mb-3">
