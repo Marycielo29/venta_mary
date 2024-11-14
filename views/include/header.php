@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -35,6 +37,9 @@
               <a class="nav-link" href="<?php echo BASE_URL ?>login"> <img src="IMG/registra.png" alt="Logo" width="30" height="30"
                   class="d-inline-block align-text-top">Registrate</a>
             </li>
+            <button class="btn btn-light dropdown-toggle" type="button" id="accountDropdown" data-bs-toggle="dropdown" aria-expanded="false"><?php echo $_SESSION['sesion_ventas_nombres'];?>
+                        </button>
+            <button type="button" class="mb-3 btn" onclick="cerrar_sesion();">Cerra sesion</button> 
           </ul>
           <form class="d-flex col-8" role="search">
             <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">

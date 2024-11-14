@@ -41,18 +41,7 @@
         <label for="">Rol: </label>
         <input type="text" id="rol" name="rol" class="form-control" required>
     </div>
-    <div class="mb-3">
-        <label for="">Password: </label>
-        <input type="password" id="password" name="password" class="form-control" required>
-    </div>
-    <div class="mb-3">
-        <label for="">Estado: </label>
-        <input type="number" id="estado" name="estado" class="form-control" required>
-    </div>
-    <div class="mb-3">
-        <label for="">Fecha de Registro: </label>
-        <input type="date" id="fecha_reg" name="fecha_reg" class="form-control" required>
-    </div>
+   
     <button type="button" class="mb-3 btn btn-outline-info" onclick="registrarPersona();"><i class="bi bi-check-circle"></i>Registrar</button>
 </form>
 </div>

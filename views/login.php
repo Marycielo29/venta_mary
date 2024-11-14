@@ -7,7 +7,9 @@
   <title>Document</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
 </head>
-
+<script>
+  const base_url = '<?php echo BASE_URL; ?>';
+</script>
 <body>
   <div class="container d-flex justify-content-center align-items-center" style="height: 100vh;">
     <div class="card shadow" style="width: 400px; border: none;">
@@ -17,12 +19,13 @@
         </div>
         <h2 class="card-title text-center mb-4" style="font-family: 'Times New Roman', Times, serif;">BIENVENIDO</h2>
         <p style="font-family: 'Times New Roman', Times, serif; color: blue; text-align: center;">REGISTRATE YA!!</p>
-        <form>
+
+        
+        <form id="frm_iniciar_sesion">
           <div class="mb-3">
-            <label for="email" class="form-label" style="font-family: 'Times New Roman', Times, serif;">CORREO
-              ELECTRONICO:</label>
-            <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp"
-              placeholder="email" required>
+            <label for="usuario" class="form-label" style="font-family: 'Times New Roman', Times, serif;">USUARIO:</label>
+            <input type="text" name="usuario" class="form-control" id="usuario" aria-describedby="emailHelp"
+              placeholder="usuario" required>
           </div>
           <div class="mb-3">
             <label for="password" class="form-label"
@@ -51,8 +54,7 @@
             </div>
           </div>
           <div class="d-grid gap-2 mt-3 p-0">
-            <a href="<?php echo BASE_URL ?>inicio" class="btn btn-outline-info"
-              style="font-family: 'Times New Roman', Times, serif; font-size: 20px;">Iniciar sesion</a>
+            <button  type="submit" class="btn btn-outline-info"> Iniciar sesion </button>
           </div>
           <div class="d-grid gap-2 mt-3 p-0">
             <a href="<?php echo BASE_URL ?>nuevo-persona" class="btn btn-outline-success"
@@ -66,5 +68,6 @@
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="<?php echo BASE_URL?>views/js/functions_login.js"></script>
 
 </html>
