@@ -4,9 +4,7 @@
           <a class="btn btn-outline-info aria-current=" href="<?php echo BASE_URL ?>categoria">TACONES PARA DAMAS</a>
         </li>
         <h1>NUEVOS PRODUCTOS PARA IMPONER MODA</h1>
-        <li class="nav-item mt-3 p-3">
-          <a class="btn btn-outline-info" href="<?php echo BASE_URL ?>login">REGISTRARSE</a>
-        </li>
+      
       </ul>
     </div>
     <div class="container-fluid p-0" style="height: 600px;">
