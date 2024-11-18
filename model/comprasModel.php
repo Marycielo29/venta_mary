@@ -1,5 +1,5 @@
 <?php
-require_once "../library/conexion.php";
+require_once "../librerias/conexion.php";
 class ComprasModel
 {
     private $conexion;
@@ -11,11 +11,8 @@ class ComprasModel
         $id_producto,
         $cantidad,
         $precio,
-        $trabajador  ) {
-        $sql = $this->conexion->query("CALL insertarCompras ('{$id_producto}', '{$cantidad}', '{$precio}', '{$trabajador}')");
-         if ($sql == false) {
-            print_r(value: $this->conexion->error);
-        }
+        $trabajador) {
+        $sql = $this->conexion->query("CALL insertarCompras('{$id_producto}','{$cantidad}','{$precio}','{$trabajador}')");
         $sql = $sql->fetch_object();
         return $sql;
     }
@@ -29,3 +26,5 @@ class ComprasModel
         return $arrRespuesta;
     }
 }
+
+?>

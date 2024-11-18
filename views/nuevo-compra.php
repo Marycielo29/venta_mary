@@ -21,7 +21,7 @@
             <option  class="trabajador" >Seleccione</option></select>
         </div>
         <br>
-        <button ype="button" class="mb-3 btn btn-outline-info" onclick="registrarCompra();"><i class="bi bi-check-circle"></i>Registrar</button>
+        <button type="button" class="mb-3 btn btn-outline-info" onclick="registrar_compra();"><i class="bi bi-check-circle"></i>Registrar</button>
     </form>
 </div>
 

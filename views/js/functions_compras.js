@@ -1,4 +1,4 @@
-async function registrar_compra() {
+async function registrar_compra(){
     let producto = document.querySelector('#id_producto').value;
     let cantidad = document.querySelector('#cantidad').value;
     let precio = document.querySelector('#precio').value;
@@ -9,9 +9,9 @@ async function registrar_compra() {
     }
     try {
         //capturamos datos del formulario html nuevo-producto
-        const datos = new FormData(formRegistrarCom);
+        const datos = new FormData(formRegistrarCompras);
         //enviamos datos hacia el controlador
-        let respuesta = await fetch(base_url + 'controller/Compra.php?tipo=registrar', {
+        let respuesta = await fetch(base_url +'controller/Compra.php?tipo=registrar', {
             method: 'POST',
             mode: 'cors',
             cache: 'no-cache',
@@ -29,6 +29,7 @@ async function registrar_compra() {
         console.log("Oops, ocurrio un error"+e);
        }
     }
+
 async function listar_productos() {
     try {
         // envia datos hacia el controlador

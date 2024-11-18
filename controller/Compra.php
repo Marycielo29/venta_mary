@@ -13,7 +13,7 @@ if ($tipo == "registrar") {
             $id_producto == "" || $cantidad == "" || $precio == "" || $trabajador == "") {
             $arr_Respuesta = array('status' => false, 'mensaje' => 'Error, campos vacios');
         } else {
-            $arrProducto = $objCompras->registrarCompras($id_producto, $cantidad, $precio, $trabajador);
+            $arrProducto = $objCompras->registrarCompras($id_producto,$cantidad,$precio,$trabajador);
             if ($arrProducto->id>0) {
             $arr_Respuesta = array('status'=>true, 'mensaje'=>'Registro exitoso');
         }else{
