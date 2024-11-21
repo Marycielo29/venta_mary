@@ -1,9 +1,38 @@
 <?php
 require_once('../model/productoModel.php');
+require_once('../model/categoriaModel.php');
+require_once('../model/personaModel.php'); 
 $tipo = $_REQUEST['tipo'];
 
 //instancio la clase modeloProducto
 $objProducto = new ProductoModel();
+$objCategoria = new categoriaModel();
+$objPersona = new PersonaModel(); 
+
+if ($tipo == "listar") {
+    $arr_Respuesta = array('status' => false, 'contenido' => '');
+    $arrProducto = $objProducto->obtenerProductos();
+
+    if (!empty($arrProducto)) {
+        for ($i = 0; $i < count($arrProducto); $i++) {
+            $id_categoria = $arrProducto[$i]->id_categoria;
+            $r_categoria = $objCategoria->obtener_categoria_id($id_categoria);
+            $arrProducto[$i]->categoria=$r_categoria;
+
+            $id_proveedor = $arrProducto[$i]->id_proveedor;
+            $r_proveedor = $objPersona->obtener_proveedor_id($id_proveedor);
+            $arrProducto[$i]->proveedor=$r_proveedor;
+
+            $id_producto =  $arrProducto[$i]->id;
+            $nombre =  $arrProducto[$i]->nombre;
+            $opciones = '';
+            $arrProducto[$i]->options = $opciones;
+        }
+        $arr_Respuesta['status'] = true;
+        $arr_Respuesta['contenido'] =  $arrProducto;
+    }
+    echo json_encode($arr_Respuesta); //convertir en formato -- 
+}
 
 if ($tipo == "registrar") {
     /*print_r($_POST);
@@ -46,19 +75,4 @@ if ($tipo == "registrar") {
             echo json_encode($arr_Respuesta);
         }
     }
-} else if ($tipo == "listar") {
-    $arr_Respuesta = array('status' => false, 'contenido' => '');
-    $arrProducto = $objProducto->obtenerProductos();
-
-    if (!empty($arrProducto)) {
-        for ($i = 0; $i < count($arrProducto); $i++) {
-            $id_producto =  $arrProducto[$i]->id;
-            $nombre =  $arrProducto[$i]->nombre;
-            $opciones = '';
-            $arrProducto[$i]->options = $opciones;
-        }
-        $arr_Respuesta['status'] = true;
-        $arr_Respuesta['contenido'] =  $arrProducto;
-    }
-    echo json_encode($arr_Respuesta); //convertir en formato -- 
 }

@@ -21,6 +21,29 @@ class PersonaModel{
         return $sql;
 
     }
+
+    public function obtener_proveedor(){
+        $arrRespuesta = array();
+        $respuesta = $this->conexion->query( "SELECT * FROM persona WHERE rol='proveedor'");
+        while ($objeto = $respuesta->fetch_object()) {
+            array_push($arrRespuesta, $objeto);
+        }
+        return  $arrRespuesta;
+    }
+
+    public function obtener_proveedor_id($id){
+        $respuesta = $this->conexion->query("SELECT *FROM persona WHERE id='{$id}'");
+        $objeto = $respuesta->fetch_object();
+        return $objeto;
+    }
+    public function obtener_trabajador(){
+        $arrRespuesta = array();
+        $respuesta = $this->conexion->query( "SELECT * FROM persona WHERE rol='trabajador'");
+        while ($objeto = $respuesta->fetch_object()) {
+            array_push($arrRespuesta, $objeto);
+        }
+        return  $arrRespuesta;
+    }
 }
 
 ?>
