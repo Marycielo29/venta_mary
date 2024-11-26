@@ -22,7 +22,7 @@ class PersonaModel{
 
     }
 
-    public function obtener_proveedor(){
+    public function obtenerProveedor(){
         $arrRespuesta = array();
         $respuesta = $this->conexion->query( "SELECT * FROM persona WHERE rol='proveedor'");
         while ($objeto = $respuesta->fetch_object()) {

@@ -33,7 +33,7 @@ if ($tipo == "listar_p") {
 }
 
 
-if ($tipo=="registrar"){
+if ($tipo == "registrar"){
 //print_r($_POST);
 if ($_POST) {
     $nro_identidad = $_POST['nroIdentidad'];
@@ -65,15 +65,13 @@ if ($_POST) {
 
 }
 }
-if ($tipo=="listar") {
+if ($tipo == "listar_proveedores") {
     $arr_respuesta = array('status'=>false,'contenido'=>'');
-    $arr_proveedor =  $objPersona->obtener_proveedor();
+    $arr_proveedor =  $objPersona->obtenerProveedor();
 
     if (!empty($arr_proveedor)) {
         
         for ($i=0; $i < count($arr_proveedor); $i++) { 
-            $rol_persona = $arr_proveedor[$i]->rol;
-            $persona = $arr_proveedor[$i]->razon_social;
             $opciones = '';
             $arr_proveedor[$i]->options = $opciones;
         }
@@ -84,7 +82,7 @@ if ($tipo=="listar") {
     echo json_encode($arr_respuesta);
 
 }
-if ($tipo=="listar") {
+if ($tipo == "listar_trabajador") {
     $arr_respuesta = array('status'=>false,'contenido'=>'');
     $arr_Trabajador =  $objPersona->obtener_trabajador();
 

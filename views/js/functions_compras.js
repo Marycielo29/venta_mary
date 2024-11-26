@@ -11,7 +11,7 @@ async function listar_compras() {
                 cont+=1;
                 nueva_fila.innerHTML = `
                 <th>${cont}</th> 
-                <td>${item.producto.nombre}</td>
+                <td>${item.producto.id}</td>
                 <td>${item.cantidad}</td>
                 <td>${item.precio}</td>
                 <td>${item.trabajador.razon_social}</td>
@@ -92,7 +92,7 @@ async function listar_productos() {
 // Listar proveedores
 async function listar_trabajadores() {
     try {
-        let respuesta = await fetch(base_url+'controller/Trabajador.php?tipo=listar');
+        let respuesta = await fetch(base_url+'controller/Persona.php?tipo=listar_trabajador');
         json = await respuesta.json();
         if (json.status) {
             let datos = json.contenido;

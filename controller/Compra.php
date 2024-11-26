@@ -1,14 +1,17 @@
 <?php
-
+$tipo  = $_REQUEST['tipo'];
 require_once('../model/comprasModel.php');
+require_once('../model/productoModel.php');
+require_once('../model/personaModel.php');
+
 $objCompras = new ComprasModel();
 $objProducto = new ProductoModel();
 $objPersona = new PersonaModel(); 
-$tipo  = $_REQUEST['tipo'];
+
 
 if ($tipo == "listar") {
     $arr_Respuesta = array('status' => false, 'contenido' => '');
-    $arrCompras = $objCompras->obtenerProductos();
+    $arrCompras = $objCompras->obtenerCompras();
 
     if (!empty($arrCompras)) {
         for ($i = 0; $i < count($arrCompras); $i++) {

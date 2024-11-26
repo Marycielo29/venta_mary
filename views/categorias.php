@@ -18,6 +18,3 @@
     </table>
 </div>
 <script src="<?php echo BASE_URL ?>views/js/functions_categoria.js"></script>
-<script>
-    listar_categorias();
-</script>
