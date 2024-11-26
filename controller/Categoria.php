@@ -5,6 +5,8 @@ $tipo = $_REQUEST['tipo'];
 //instanciar la clase categoria model
 $objCategoria = new categoriaModel();
 
+
+
 if ($tipo=="listar") {
     //respuesta
 
