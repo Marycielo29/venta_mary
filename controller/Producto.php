@@ -25,7 +25,10 @@ if ($tipo == "listar") {
 
             $id_producto =  $arrProducto[$i]->id;
             $nombre =  $arrProducto[$i]->nombre;
-            $opciones = '';
+            $opciones = '
+                 <a href="'.BASE_URL.'editar-producto/'.$id_producto.'"><i class="fas fa-edit"></i></a>
+                 <button onclick="eliminar_producto('.$id_producto.');"><i class="fas fa-trash-alt"></i></button>
+            ';
             $arrProducto[$i]->options = $opciones;
         }
         $arr_Respuesta['status'] = true;
@@ -75,4 +78,17 @@ if ($tipo == "registrar") {
             echo json_encode($arr_Respuesta);
         }
     }
+}
+
+if($tipo == "ver") {
+    //print_r($_POST);
+    $id_producto = $_POST['id_producto'];
+    $arr_Respuesta = $objProducto->verProducto($id_producto);
+   // print_r($arr_Respuesta);
+   if (empty($arr_Respuesta)) {
+       $response = array('status' => false, 'mensaje' => "Error ps no hay informacion");
+   }else{
+    $response = array('status' => true, 'mensaje'=>"datos encontrados", 'contenido' => $arr_Respuesta);
+   }
+   echo json_encode($response);
 }
