@@ -56,10 +56,7 @@
           <div class="d-grid gap-2 mt-3 p-0">
             <button  type="submit" class="btn btn-outline-info"> Iniciar sesion </button>
           </div>
-          <div class="d-grid gap-2 mt-3 p-0">
-            <a href="<?php echo BASE_URL ?>nuevo-persona" class="btn btn-outline-success"
-              style="font-family: 'Times New Roman', Times, serif; font-size: 20px;">Administrador</a>
-          </div>
+          
         </form>
       </div>
     </div>
