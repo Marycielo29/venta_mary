@@ -53,7 +53,7 @@ if ($tipo == "registrar") {
             if ($arrProducto->id>0) {
             $arr_Respuesta = array('status'=>true, 'mensaje'=>'Registro exitoso');
         }else{
-            $arr_Respuesta = array('status'=>false, 'mensaje'=>'Error al registrar persona');
+            $arr_Respuesta = array('status'=>false, 'mensaje'=>'Error al registrar compra');
         }
     }
             echo json_encode($arr_Respuesta);
