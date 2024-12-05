@@ -1,9 +1,11 @@
 <div class="container mt-5">
 <h1 class="text-center mb-4">Editar Productos</h1>
-<form action="" class="from-control" id="frmRegistrar">
+<form action="" class="from-control" id="frmActualizar">
+    <input type="hidden" name="id_producto" id="id_producto">
+    <input type="hidden" name="img" id="img">
     <div class="mb-3">
         <label for="">Codigo: </label>
-        <input type="text" id="codigo" name="codigo" class="form-control" required>
+        <input type="text" id="codigo" name="codigo" class="form-control" disabled>
     </div>
     <div class="mb-3">
         <label for="">Nombre: </label>

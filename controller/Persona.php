@@ -23,7 +23,10 @@ if ($tipo == "listar_p") {
             $direccion =  $arrPersona[$i]->direccion;
             $rol =  $arrPersona[$i]->rol;
 
-            $opciones = '';
+            $opciones = '
+            <a href="'.BASE_URL.'editar-persona/'.$id_persona.'"><i class="fas fa-edit btn btn-info btn-sm"></i></a>
+                 <button onclick="eliminar_persona('.$id_persona.');"class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i></button>
+            ';
             $arrPersona[$i]->options = $opciones;
         }
         $arr_Respuesta['status'] = true;
@@ -101,5 +104,18 @@ if ($tipo == "listar_trabajador") {
     echo json_encode($arr_respuesta);
 
 }
+if($tipo == "ver") {
+    //print_r($_POST);
+    $id_persona = $_POST['id_persona'];
+    $arr_Respuesta = $objPersona->verPersona($id_persona);
+   // print_r($arr_Respuesta);
+   if (empty($arr_Respuesta)) {
+       $response = array('status' => false, 'mensaje' => "ErroR¡¡ no hay informacion");
+   }else{
+    $response = array('status' => true, 'mensaje'=>"datos encontrados", 'contenido' => $arr_Respuesta);
+   }
+   echo json_encode($response);
+}
+
 
 ?>

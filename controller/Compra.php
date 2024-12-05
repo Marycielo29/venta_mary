@@ -21,7 +21,7 @@ if ($tipo == "listar") {
             $precio = $arrCompras[$i]->precio;
             $id_trabajador = $arrCompras[$i]->id_trabajador;
 
-            $id_producto = $arrCompras[$i]->id;
+            $id_producto = $arrCompras[$i]->id_producto;
             $r_producto = $objProducto->obtener_producto_id($id_producto);
             $arrCompras[$i]->producto=$r_producto;
 
@@ -29,7 +29,10 @@ if ($tipo == "listar") {
             $r_trabajador = $objPersona->obtener_trabajador_id($id_trabajador);
             $arrCompras[$i]->trabajador=$r_trabajador;
 
-            $opciones = '';
+            $opciones = '
+             <a href="'.BASE_URL.'editar-compra/'.$id_compra.'"><i class="fas fa-edit btn btn-info btn-sm"></i></a>
+                 <button onclick="eliminar_compra('.$id_compra.');"class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i></button>
+            ';
             $arrCompras[$i]->options = $opciones;
             
         }
@@ -60,5 +63,19 @@ if ($tipo == "registrar") {
 
 }
 }
+if($tipo == "ver") {
+    //print_r($_POST);
+    $id_compra = $_POST['id_compra'];
+    $arr_Respuesta = $objCompras->verCompras($id_compra);
+   // print_r($arr_Respuesta);
+   if (empty($arr_Respuesta)) {
+       $response = array('status' => false, 'mensaje' => "ErroR¡¡ no hay informacion");
+   }else{
+    $response = array('status' => true, 'mensaje'=>"datos encontrados", 'contenido' => $arr_Respuesta);
+   }
+   echo json_encode($response);
+}
+
+
 
 ?>

@@ -19,7 +19,6 @@ class ProductoModel{
         return $arrRespuesta;
     }
 
-
     public function obtener_producto_id($id){
         $respuesta = $this->conexion->query("SELECT * FROM producto WHERE id='{$id}'");
         $objeto = $respuesta->fetch_object();
@@ -42,6 +41,10 @@ class ProductoModel{
         $sql = $sql->fetch_object();
         return $sql;
      }
-    
+     public function actualizarProducto($id, $nombre, $detalle, $precio, $categoria, $proveedor){
+        $sql = $this->conexion->query("CALL actualizarProducto('{$id}', '{$nombre}', '{$detalle}', '{$precio}', '{$categoria}', '{$proveedor}')");
+        $sql = $sql->fetch_object();
+        return $sql;
+     }
 }
 ?>
