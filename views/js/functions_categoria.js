@@ -74,6 +74,7 @@ async function registrar_categoria(){
             });
             json = await respuesta.json();
             if (json.status) {
+                document.querySelector('#id_categoria').value = json.contenido.id;
                 document.querySelector('#nombre').value = json.contenido.nombre;
                 document.querySelector('#detalle').value = json.contenido.detalle;
             }else{
@@ -82,5 +83,21 @@ async function registrar_categoria(){
             console.log(json);
         } catch (error) {
             console.log("oops ocurrio un error al editar categoria"+error)
+        }
+    }
+
+    async function actualizarCategoria() {
+        const datos = new FormData(formActualizarCat);
+        try {
+            let respuesta = await fetch(base_url + 'controller/Categoria.php?tipo=actualizar', {
+                method: 'POST',
+                mode: 'cors',
+                cache: 'no-cache',
+                body: datos
+            });
+            json = await respuesta.json();
+            console.log(json);
+        } catch (e) {
+    
         }
     }

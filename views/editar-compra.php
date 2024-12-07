@@ -1,7 +1,8 @@
 <div class="container mt-5">
 <h1 class="text-center mb-4 ">Editar compras</h1>
 
-    <form action="" class="from-control" id="formRegistrarCompras"  >
+    <form action="" class="from-control" id="formRegistrarCompras" >
+        
         <div class="mb-3">
             <label for="id_producto">Producto: </label>
             <select type="text" name="id_producto" id="id_producto"  class="form-control" required>

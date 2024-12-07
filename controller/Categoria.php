@@ -64,5 +64,24 @@ if($tipo == "ver") {
    echo json_encode($response);
 }
 
+if ($tipo == "actualizar") {
+    // Obtener los datos del formulario
+    $id_categoria = $_POST['id_categoria'];
+    $nombre = $_POST['nombre'];
+    $detalle = $_POST['detalle'];
 
+    if ($id_categoria == "" || $nombre == "" || $detalle == "") {
+        $arr_Respuesta = array('status' => false, 'mensaje' => 'Error, campos vacios'); //respuesta
+
+    } else {
+        $arrCategoria = $objCategoria->actualizarCategoria($id_categoria, $nombre, $detalle);
+        if ($arrCategoria->p_id > 0) {
+            $arr_Respuesta = array('status' => true, 'mensaje' => 'Actualizado Correctamente');
+
+        } else {
+            $arr_Respuesta = array('status' => false, 'mensaje' => 'Error al actualizar categoria');
+        }
+    }
+    echo json_encode($arr_Respuesta);
+}
 ?>

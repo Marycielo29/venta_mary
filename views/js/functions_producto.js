@@ -114,9 +114,9 @@ async function listarProveedor() {
 }
 async function ver_producto(id) {
     const formData = new FormData();
-    formData.append('id_producto', id); 
+    formData.append('id_producto', id);
     try {
-        let respuesta = await fetch(base_url+'controller/Producto.php?tipo=ver', {
+        let respuesta = await fetch(base_url + 'controller/Producto.php?tipo=ver', {
             method: 'POST',
             mode: 'cors',
             cache: 'no-cache',
@@ -124,21 +124,21 @@ async function ver_producto(id) {
         });
         json = await respuesta.json();
         if (json.status) {
-            document.querySelector('#id_producto').value = json.contenido.id_producto;
+            document.querySelector('#id_producto').value = json.contenido.id;
             document.querySelector('#codigo').value = json.contenido.codigo;
             document.querySelector('#nombre').value = json.contenido.nombre;
             document.querySelector('#detalle').value = json.contenido.detalle;
             document.querySelector('#precio').value = json.contenido.precio;
-            document.querySelector('#categoria').value = json.contenido.id_categoria ;
-            document.querySelector('#imagen').value = json.contenido.imagen;
+            document.querySelector('#categoria').value = json.contenido.id_categoria;
+            //document.querySelector('#imagen').value = json.contenido.imagen;
             document.querySelector('#proveedor').value = json.contenido.id_proveedor;
             document.querySelector('#img').value = json.contenido.imagen;
-        }else{
-            window.location = base_url+"productos";
+        } else {
+            window.location = base_url + "productos";
         }
         console.log(json);
     } catch (error) {
-        console.log("oops ocurrio un error al editar"+error)
+        console.log("oops ocurrio un error " + error);
     }
 }
 async function actualizar_producto() {
@@ -153,5 +153,6 @@ async function actualizar_producto() {
         json = await respuesta.json();
         console.log(json);
     } catch (e) {
+
     }
 }
