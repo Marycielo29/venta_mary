@@ -1,13 +1,15 @@
 <div class="container mt-5"> 
 <h1 class="text-center mb-4">Editar Usuario</h1>
-<form action="" class="from-control" id="frmRegistrar">
+<form action="" class="from-control" id="formActualizarPer">
+<input type="hidden" name="id_persona" id="id_persona">
 <div class="mb-3">
+
         <label for="">Numero de Identidad: </label>
-        <input type="text" id="nro_identidad" name="nroIdentidad" class="form-control" required>
+        <input type="text" id="nro_identidad" name="nro_identidad" class="form-control" required>
     </div>
     <div class="mb-3">
         <label for="">Razon social: </label>
-        <input type="text" id="razon_social" name="razonSocial" class="form-control" required>
+        <input type="text" id="razon_social" name="razon_social" class="form-control" required>
     </div>
     <div class="mb-3">
         <label for="">Telefono: </label>
@@ -43,10 +45,10 @@
         <option value="" disabled selected>Seleccione un rol</option>
         <option value="proveedor">Proveedor</option>
         <option value="trabajador">Trabajador</option>
+        <option value="trabajador">Adimistrador</option>
     </select>
 </div>
-   
-<button type="button" class="mb-3 btn btn-outline-info" onclick="actualizar_persona();"><i class="bi bi-check-circle"></i>Actualizar</button>
+<button type="button" class="btn btn-success btn-block" onclick="actualizarPersona();"><i class="fas fa-check"></i> Actualizar</button>
 </form>
 </div>
 

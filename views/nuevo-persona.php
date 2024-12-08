@@ -1,3 +1,8 @@
+<div class="container my-4">
+    <button class="btn btn-secondary" onclick="window.history.back();">
+        <i class="bi bi-arrow-left-circle me-1"></i> Volver Atrás
+    </button>
+</div>
 <div class="container mt-5"> 
 <h1 class="text-center mb-4">Registrar Usuario</h1>
 <form action="" class="from-control" id="frmRegistrar">
@@ -43,6 +48,7 @@
         <option value="" disabled selected>Seleccione un rol</option>
         <option value="proveedor">Proveedor</option>
         <option value="trabajador">Trabajador</option>
+        <option value="trabajador">Adimistrador</option>
     </select>
 </div>
    

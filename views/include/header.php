@@ -45,10 +45,31 @@
             <button class="btn btn-outline-success" type="submit">Buscar</button>
           </form>
           
+          <div class="card-body p-2">
+            <div class="dropdown">
+                <button class="btn btn-sm btn-primary dropdown-toggle w-100" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                    Panel
+                </button>
+                <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+                    <li>
+                        <button type="button" class="dropdown-item d-flex align-items-center">
+                            <i class="bi bi-person-fill me-2"></i> 
+                            <?php echo $_SESSION['sesion_ventas_nombres']; ?>
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="dropdown-item d-flex align-items-center" onclick="cerrar_sesion();">
+                            <i class="bi bi-box-arrow-right me-2"></i> Cerrar sesión
+                        </button>
+                    </li>
+                      <li>
+                        <a class="dropdown-item d-flex align-items-center" href="<?php echo BASE_URL ?>panel"><i class="bi bi-columns-gap me-2"></i> Ver Panel</a>
+                      </li>               
+                </ul>
+            </div>
+        </div>
         </div>
         
-        <button type="button" class="me-2 btn "> <i class="bi bi-person-fill"></i> <?php echo $_SESSION['sesion_ventas_nombres'];?></button>
-        <button type="button" class="me-2 btn" onclick="cerrar_sesion();"><i class="bi bi-box-arrow-right"></i> Cerra sesion</button> 
       </div>
     </nav>
 

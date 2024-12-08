@@ -40,6 +40,7 @@ class ComprasModel
         $sql = $sql->fetch_object();
         return $sql;
      }
+    
 }
 
 ?>

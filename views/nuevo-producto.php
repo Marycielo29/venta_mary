@@ -1,4 +1,8 @@
-
+<div class="container my-4">
+    <button class="btn btn-secondary" onclick="window.history.back();">
+        <i class="bi bi-arrow-left-circle me-1"></i> Volver Atrás
+    </button>
+</div>
 <div class="container mt-5">
 <h1 class="text-center mb-4">Registrar Productos</h1>
 <form action="" class="from-control" id="frmRegistrar">
@@ -40,6 +44,7 @@
     </div>
     <button type="button" class="mb-3 btn btn-outline-info" onclick="registrar_producto();"><i class="bi bi-check-circle"></i>Registrar</button>
 </form>
+
 </div>
 
 <script src="<?php echo BASE_URL ?>views/js/functions_producto.js"></script>
