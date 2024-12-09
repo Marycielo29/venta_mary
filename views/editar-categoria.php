@@ -11,7 +11,7 @@
         <label for="">Detalle: </label>
         <input type="text" id="detalle" name="detalle" class="form-control" required>
     </div>
-    <button type="button" class="btn btn-success btn-block" onclick="actualizarCategoria();">
+    <button type="button" class="mb-3 btn btn-outline-info" onclick="actualizarCategoria();">
     <i class="fas fa-check"></i> Actualizar
 </button>
 </form>

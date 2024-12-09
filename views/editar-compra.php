@@ -1,8 +1,8 @@
 <div class="container mt-5">
 <h1 class="text-center mb-4 ">Editar compras</h1>
 
-    <form action="" class="from-control" id="formRegistrarCompras" >
-        
+    <form action="" class="from-control" id="formACtualizarCompras" >
+    <input type="hidden" name="id_compra" id="id_compra">
         <div class="mb-3">
             <label for="id_producto">Producto: </label>
             <select type="text" name="id_producto" id="id_producto"  class="form-control" required>
@@ -22,7 +22,9 @@
             <option  class="trabajador" >Seleccione</option></select>
         </div>
         <br>
-        <button type="button" class="mb-3 btn btn-outline-info" onclick="registrar_compra();"><i class="bi bi-check-circle"></i>Registrar</button>
+        <button type="button" class="mb-3 btn btn-outline-info" onclick="actualizarCompras();">
+    <i class="fas fa-check"></i> Actualizar
+</button>
     </form>
 </div>
 

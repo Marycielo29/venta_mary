@@ -48,7 +48,7 @@
         <option value="trabajador">Adimistrador</option>
     </select>
 </div>
-<button type="button" class="btn btn-success btn-block" onclick="actualizarPersona();"><i class="fas fa-check"></i> Actualizar</button>
+<button type="button" class="mb-3 btn btn-outline-info" onclick="actualizarPersona();"><i class="fas fa-check"></i> Actualizar</button>
 </form>
 </div>
 

@@ -118,6 +118,7 @@ async function ver_compra(id) {
         });
         json = await respuesta.json();
         if (json.status) {
+            document.querySelector('#id_compra').value = json.contenido.id;
             document.querySelector('#id_producto').value = json.contenido.id_producto;
             document.querySelector('#cantidad').value = json.contenido.cantidad;
             document.querySelector('#precio').value = json.contenido.precio;
@@ -127,6 +128,22 @@ async function ver_compra(id) {
         }
         console.log(json);
     } catch (error) {
-        console.log("oops ocurrio un error al editar compra"+error)
+        console.log("oops ocurrio un error al editar compra"+error);
+    }
+}
+
+async function formACtualizarCompras() {
+    const datos = new FormData(formACtualizarCompras);
+    try {
+        let respuesta = await fetch(base_url + 'controller/Compra.php?tipo=actualizar', {
+            method: 'POST',
+            mode: 'cors',
+            cache: 'no-cache',
+            body: datos
+        });
+        json = await respuesta.json();
+        console.log(json);
+    } catch (e) {
+
     }
 }
