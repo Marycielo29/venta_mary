@@ -179,8 +179,8 @@ async function eliminar_producto(id) {
 }
 
 async function fnt_eliminar(id) {
-    const formdata = new FormData();
-    formdata.append('id_producto',
+    const formData = new FormData();
+    formData.append('id_producto',
         id);
         try {
             let respuesta = await fetch(base_url + 'controller/Producto.php?tipo=eliminar',{
