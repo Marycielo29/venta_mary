@@ -151,8 +151,14 @@ async function actualizar_producto() {
             body: datos
         });
         json = await respuesta.json();
+        if (json.status) {
+            swal("Actualizado", json.mensaje, "success");
+        } else {
+            swal("Actualizado", json.mensaje, "error");
+        }
+
         console.log(json);
     } catch (e) {
-
+        console.log("Oops, ocurrio un error" + e);
     }
 }

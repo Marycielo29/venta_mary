@@ -132,7 +132,7 @@ async function ver_compra(id) {
     }
 }
 
-async function formACtualizarCompras() {
+async function actualizarCompra() {
     const datos = new FormData(formACtualizarCompras);
     try {
         let respuesta = await fetch(base_url + 'controller/Compra.php?tipo=actualizar', {
@@ -142,8 +142,13 @@ async function formACtualizarCompras() {
             body: datos
         });
         json = await respuesta.json();
+        if(json.status){
+            swal("Registro", json.mensaje, "success");
+        }else{
+            swal("Registro", json.mensaje, "error");
+        }
         console.log(json);
     } catch (e) {
-
+        console.log("Oops, ocurrio un error compras"+e);
     }
 }

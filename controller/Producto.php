@@ -96,6 +96,7 @@ if ($tipo == "ver") {
 if($tipo == "actualizar") {
     //print_r($_POST);
     //print_r($_FILES['imagen']['tmp_name']);
+    if ($_POST) {
     $id_producto = $_POST['id_producto'];
     $img = $_POST['img'];
     $nombre = $_POST['nombre'];
@@ -124,6 +125,7 @@ if($tipo == "actualizar") {
         } else {
             $arr_Respuesta = array('status' => false, 'mensaje' => 'Error al actualizar producto');
         }
+        echo json_encode($arr_Respuesta);
     }
-    echo json_encode($arr_Respuesta);
+}
 }

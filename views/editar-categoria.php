@@ -11,15 +11,13 @@
         <label for="">Detalle: </label>
         <input type="text" id="detalle" name="detalle" class="form-control" required>
     </div>
-    <button type="button" class="mb-3 btn btn-outline-info" onclick="actualizarCategoria();">
-    <i class="fas fa-check"></i> Actualizar
-</button>
+    <button type="button" class="btn btn-success" onclick="actualizarCategoria();">Actualizar</button>
 </form>
 </div>
 <script src="<?php echo BASE_URL ?>views/js/functions_categoria.js"></script>
 <script>
     //http://localhost/venta_mary/editar-producto/1
     //captura lo que viene en el link     se captura la posicion de ese valor
-    const id_c=<?php $pagina=explode("/", $_GET['views']); echo $pagina['1']; ?>;
-    ver_categoria(id_c);
+    const id_p=<?php $pagina=explode("/", $_GET['views']); echo $pagina['1']; ?>;
+    ver_categoria(id_p);
 </script>

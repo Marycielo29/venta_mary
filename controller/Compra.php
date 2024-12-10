@@ -82,13 +82,13 @@ if ($tipo == "actualizar") {
     $id_producto = $_POST['id_producto'];
     $cantidad = $_POST['cantidad'];
     $precio = $_POST['precio'];
-    $trabajador = $_POST['trabajador'];
+    $id_trabajador = $_POST['trabajador'];
 
-    if ($id_compra == "" || $id_producto == "" || $cantidad == "" || $precio == "" || $trabajador == "") {
+    if ($id_compra == "" || $id_producto == "" || $cantidad == "" || $precio == "" || $id_trabajador == "") {
         $arr_Respuesta = array('status' => false, 'mensaje' => 'Error, campos vacios'); //respuesta
 
     } else {
-        $arrCompras = $objCompras->actualizarCompra($id_compra, $id_producto, $cantidad, $precio, $trabajador);
+        $arrCompras = $objCompras->actualizarCompra($id_compra, $id_producto, $cantidad, $precio, $id_trabajador);
         if ($arrCompras->p_id > 0) {
             $arr_Respuesta = array('status' => true, 'mensaje' => 'Actualizado Correctamente');
 

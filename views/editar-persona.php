@@ -56,6 +56,6 @@
 <script>
     //http://localhost/venta_mary/editar-producto/1
     //captura lo que viene en el link     se captura la posicion de ese valor
-    const id_per=<?php $pagina=explode("/", $_GET['views']); echo $pagina['1']; ?>;
-    ver_persona(id_per);
+    const id_p=<?php $pagina=explode("/", $_GET['views']); echo $pagina['1']; ?>;
+    ver_persona(id_p);
 </script>

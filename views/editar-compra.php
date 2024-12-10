@@ -21,10 +21,7 @@
             <select type="text" name="trabajador" id="trabajador"  class="form-control" required>
             <option  class="trabajador" >Seleccione</option></select>
         </div>
-        <br>
-        <button type="button" class="mb-3 btn btn-outline-info" onclick="actualizarCompras();">
-    <i class="fas fa-check"></i> Actualizar
-</button>
+        <button type="button" class="mb-3 btn btn-outline-info" onclick="actualizarCompra();"><i class="fas fa-check"></i> Actualizar</button>
     </form>
 </div>
 
@@ -34,6 +31,6 @@
 <script>
     //http://localhost/venta_mary/editar-producto/1
     //captura lo que viene en el link     se captura la posicion de ese valor
-    const id_com=<?php $pagina=explode("/", $_GET['views']); echo $pagina['1']; ?>;
-    ver_compra(id_com);
+    const id_p=<?php $pagina=explode("/", $_GET['views']); echo $pagina['1']; ?>;
+    ver_compra(id_p);
 </script>

@@ -42,7 +42,7 @@ class ProductoModel{
         return $sql;
      }
      public function actualizarProducto($id, $nombre, $detalle, $precio, $categoria, $proveedor){
-        $sql = $this->conexion->query("CALL actualizarproducto('{$id}','{$nombre}','{$detalle}','{$precio}','{$categoria}','{$proveedor}')");
+        $sql = $this->conexion->query("CALL actualizarProducto('{$id}','{$nombre}','{$detalle}','{$precio}','{$categoria}','{$proveedor}')");
         $sql = $sql->fetch_object();
         return $sql;
     }
