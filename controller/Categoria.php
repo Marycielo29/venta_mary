@@ -84,4 +84,17 @@ if ($tipo == "actualizar") {
     }
     echo json_encode($arr_Respuesta);
 }
+
+if ($tipo == "eliminar") {
+    //print_r($_POST);
+    $id_categoria = $_POST['id_categoria'];
+    $arr_Respuesta = $objCategoria->eliminar_categoria($id_categoria);
+    //print_r($arr_Respuesta);
+    if (empty($arr_Respuesta)) {
+        $response = array('status' => false);
+    } else {
+        $response = array('status' => true);
+    }
+    echo json_encode($response);
+}
 ?>
