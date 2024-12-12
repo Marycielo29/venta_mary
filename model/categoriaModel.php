@@ -42,11 +42,21 @@ class categoriaModel
         $sql = $sql->fetch_object();
         return $sql;
     }
+    public function productosAsociados($id){
+        $sql = $this->conexion->query("SELECT COUNT(*) as count FROM producto WHERE id_categoria ='{$id}'");
+        $resultado = $sql->fetch_object();
+        return $resultado -> count > 0;
+    }
+    
     public function eliminar_categoria($id){
         $sql = $this->conexion->query("CALL eliminarCategoria('{$id}')");
-        $sql = $sql->fetch_object();
+        if (!$sql){
+            die("Error en la ejecucuión " . $this->conexion->error);
+        }
         return $sql;
     }
+  
 }
+
 
 ?>

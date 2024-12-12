@@ -130,14 +130,23 @@ if($tipo == "actualizar") {
 }
 
 if ($tipo == "eliminar") {
-    //print_r($_POST);
-    $id_producto = $_POST['id_producto'];
-    $arr_Respuesta = $objProducto->eliminarProducto($id_producto);
-    //print_r($arr_Respuesta);
-    if (empty($arr_Respuesta)) {
-        $response = array('status' => false);
-    } else {
-        $response = array('status' => true);
+
+    if ($_POST) {
+        $id_producto = $_POST['id_producto'];
+
+        if ($objProducto->comprasAsociados($id_producto)) {
+            $arr_Respuesta = array('status' => false, 'mensaje' => 'No se puede eliminar el producto por que
+         tiene categorias asociadas');
+        } else {
+            $arrProducto = $objProducto->eliminar_producto($id_producto);
+            //print_r($arr_Respuesta);
+            if ($arrProducto) {
+
+                $arr_Respuesta = array('status' => true , 'mensaje' => '');
+            } else {
+                $arr_Respuesta = array('status' => false , 'mensaje' => 'No se puede eliminar la categoria');
+            }
+        }
+        echo json_encode($arr_Respuesta);
     }
-    echo json_encode($response);
 }

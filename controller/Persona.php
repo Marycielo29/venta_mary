@@ -149,16 +149,25 @@ if ($tipo == "actualizar") {
 }
 
 if ($tipo == "eliminar") {
-    //print_r($_POST);
-    $id_persona = $_POST['id_persona'];
-    $arr_Respuesta = $objPersona->eliminar_persona($id_persona);
-    //print_r($arr_Respuesta);
-    if (empty($arr_Respuesta)) {
-        $response = array('status' => false);
-    } else {
-        $response = array('status' => true);
+
+    if ($_POST) {
+        $id_persona = $_POST['id_persona'];
+
+        if ($objPersona->personasAsociados($id_persona)) {
+            $arr_Respuesta = array('status' => false, 'mensaje' => 'No se puede eliminar al usuario, por que
+         tiene compras o productos asociados');
+        } else {
+            $arrPersona = $objPersona->eliminar_persona($id_persona);
+            //print_r($arr_Respuesta);
+            if ($arrPersona) {
+
+                $arr_Respuesta = array('status' => true , 'mensaje' => '');
+            } else {
+                $arr_Respuesta = array('status' => false , 'mensaje' => 'No se puede eliminar la categoria');
+            }
+        }
+        echo json_encode($arr_Respuesta);
     }
-    echo json_encode($response);
 }
 
 ?>

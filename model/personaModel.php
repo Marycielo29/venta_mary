@@ -76,7 +76,18 @@ class PersonaModel{
     public function eliminar_persona($id){
         $sql = $this->conexion->query("CALL eliminarPersona('{$id}')");
         $sql = $sql->fetch_object();
-        return $sql;
+        return$sql;
+    
+    }
+    public function personasAsociados($id){
+        $sql = $this->conexion->query("SELECT COUNT(*) as count FROM compras WHERE id_trabajador ='{$id}'");
+        $resultado = $sql->fetch_object();
+        if ($resultado-> count > 0) {
+            return true;
+        }
+        $sql = $this->conexion->query("SELECT COUNT(*) as count FROM producto WHERE id_proveedor ='{$id}'");
+        $resultado = $sql->fetch_object();
+        return $resultado-> count > 0;
     }
 }
 
