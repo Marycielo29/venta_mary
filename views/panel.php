@@ -11,10 +11,10 @@
                         </div>
                         <h5 class="card-title fw-bold">Productos</h5>
                         <div class="d-flex justify-content-between mt-3">
-                            <a href="<?php echo BASE_URL ?>nuevo-producto" class="btn btn-primary btn-sm" aria-label="Registrar Producto">
+                            <a href="<?php echo BASE_URL ?>nuevo-producto" class="btn btn-outline-info btn-sm" aria-label="Registrar Producto">
                                 <i class="bi bi-plus-circle me-1"></i> Registrar
                             </a>
-                            <a href="<?php echo BASE_URL ?>productos" class="btn btn-secondary btn-sm" aria-label="Ver Productos">
+                            <a href="<?php echo BASE_URL ?>productos" class="btn btn-outline-success btn-sm" aria-label="Ver Productos">
                                 <i class="bi bi-eye me-1"></i> Ver
                             </a>
                         </div>
@@ -30,10 +30,10 @@
                         </div>
                         <h5 class="card-title fw-bold">Usuarios</h5>
                         <div class="d-flex justify-content-between mt-3">
-                            <a href="<?php echo BASE_URL ?>nuevo-persona" class="btn btn-primary btn-sm" aria-label="Registrar Usuario">
+                            <a href="<?php echo BASE_URL ?>nuevo-persona" class="btn btn-outline-info btn-sm" aria-label="Registrar Usuario">
                                 <i class="bi bi-plus-circle me-1"></i> Registrar
                             </a>
-                            <a href="<?php echo BASE_URL ?>usuarios" class="btn btn-secondary btn-sm" aria-label="Ver Usuarios">
+                            <a href="<?php echo BASE_URL ?>usuarios" class="btn btn-outline-success btn-sm" aria-label="Ver Usuarios">
                                 <i class="bi bi-eye me-1"></i> Ver
                             </a>
                         </div>
@@ -49,10 +49,10 @@
                         </div>
                         <h5 class="card-title fw-bold">Categorías</h5>
                         <div class="d-flex justify-content-between mt-3">
-                            <a href="<?php echo BASE_URL ?>nuevo-categoria" class="btn btn-primary btn-sm" aria-label="Registrar Categoría">
+                            <a href="<?php echo BASE_URL ?>nuevo-categoria" class="btn btn-outline-info btn-sm" aria-label="Registrar Categoría">
                                 <i class="bi bi-plus-circle me-1"></i> Registrar
                             </a>
-                            <a href="<?php echo BASE_URL ?>categorias" class="btn btn-secondary btn-sm" aria-label="Ver Categorías">
+                            <a href="<?php echo BASE_URL ?>categorias" class="btn btn-outline-success btn-sm" aria-label="Ver Categorías">
                                 <i class="bi bi-eye me-1"></i> Ver
                             </a>
                         </div>
@@ -68,10 +68,10 @@
                         </div>
                         <h5 class="card-title fw-bold">Compras</h5>
                         <div class="d-flex justify-content-between mt-3">
-                            <a href="<?php echo BASE_URL ?>nuevo-compra" class="btn btn-primary btn-sm" aria-label="Registrar Compra">
+                            <a href="<?php echo BASE_URL ?>nuevo-compra" class="btn btn-outline-info btn-sm" aria-label="Registrar Compra">
                                 <i class="bi bi-plus-circle me-1"></i> Registrar
                             </a>
-                            <a href="<?php echo BASE_URL ?>compras" class="btn btn-secondary btn-sm" aria-label="Ver Compras">
+                            <a href="<?php echo BASE_URL ?>compras" class="btn btn-outline-success btn-sm" aria-label="Ver Compras">
                                 <i class="bi bi-eye me-1"></i> Ver
                             </a>
                         </div>

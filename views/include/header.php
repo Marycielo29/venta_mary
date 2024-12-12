@@ -47,24 +47,24 @@
           
           <div class="card-body p-2">
             <div class="dropdown">
-                <button class="btn btn-sm btn-primary dropdown-toggle w-100" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                <button class="btn btn-sm btn-outline-info dropdown-toggle w-100" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
                     Panel
                 </button>
                 <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
-                    <li>
-                        <button type="button" class="dropdown-item d-flex align-items-center">
-                            <i class="bi bi-person-fill me-2"></i> 
-                            <?php echo $_SESSION['sesion_ventas_nombres']; ?>
-                        </button>
-                    </li>
-                    <li>
+                <li>
+                  <button type="button" class="dropdown-item d-flex justify-content-center align-items-center text-center">
+                      <i class="bi bi-person-fill me-2"></i> <?php echo $_SESSION['sesion_ventas_nombres']; ?>
+                  </button>
+</li>
+                    <hr>
+                      <li>
+                        <a class="dropdown-item d-flex align-items-center" href="<?php echo BASE_URL ?>panel"><i class="bi bi-columns-gap me-2"></i> Ver Panel</a>
+                      </li>  
+                      <li>
                         <button type="button" class="dropdown-item d-flex align-items-center" onclick="cerrar_sesion();">
                             <i class="bi bi-box-arrow-right me-2"></i> Cerrar sesión
                         </button>
-                    </li>
-                      <li>
-                        <a class="dropdown-item d-flex align-items-center" href="<?php echo BASE_URL ?>panel"><i class="bi bi-columns-gap me-2"></i> Ver Panel</a>
-                      </li>               
+                    </li>             
                 </ul>
             </div>
         </div>
